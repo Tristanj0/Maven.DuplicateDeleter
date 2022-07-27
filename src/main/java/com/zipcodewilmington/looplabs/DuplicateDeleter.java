@@ -12,4 +12,7 @@ public abstract class DuplicateDeleter<T> implements DuplicateDeleterInterface<T
 
     abstract public T[] removeDuplicates(int maxNumberOfDuplications);
     abstract public T[] removeDuplicatesExactly(int exactNumberOfDuplications);
+    abstract public Integer[] countMultiples(T [] input);
+    abstract public int calculateNewLength(Integer [] multiples, int maxNumberOfDuplications);
+    abstract public int calculateExactLength(Integer [] multiples, int maxNumberOfDuplications);
 }
